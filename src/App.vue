@@ -2,7 +2,10 @@
   <v-app dark>
     <v-toolbar app>
       <v-toolbar-title v-text="title"></v-toolbar-title>
-      <v-spacer></v-spacer> 
+      <v-spacer></v-spacer>
+      <v-btn href='https://github.com/gerardl/VuetifyTicker' target='_blank' icon>
+        <v-icon color="grey lighten-1">fab fa-github</v-icon>
+      </v-btn>
     </v-toolbar>
 
     <v-content>
@@ -14,16 +17,20 @@
         </v-layout>
       </v-container>
     </v-content>
+
+    <ticker-footer />
   </v-app>
 </template>
 
 <script>
 import BitstampChannel from './components/BitstampChannel'
+import TickerFooter from './components/TickerFooter'
 
 export default {
   name: 'App',
   components: {
-    BitstampChannel
+    BitstampChannel,
+    TickerFooter
   },
   data () {
     return {
@@ -35,7 +42,7 @@ export default {
         { name: 'Bitcoin Cash', channel: 'bchusd', symbol: 'BCH' },
         { name: 'Euro', channel: 'eurusd', symbol: 'EUR' }
       ],
-      title: 'Vuetify Ticker'
+      title: 'Crypto Ticker'
     }
   }
 }

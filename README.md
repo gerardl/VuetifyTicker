@@ -1,6 +1,6 @@
-# Vuetify Crypto Ticker
+# Crypto Ticker
 
-Uses bitstamp pusher channels to show live prices.  Project uses [vuejs](https://vuejs.org) with the [vuetify](https://vuetifyjs.com) material design framework
+Uses [bitstamp](https://www.bitstamp.net/websocket/) pusher channels to show live prices.  Project uses [vuejs](https://vuejs.org) with the [vuetify](https://vuetifyjs.com) material design framework
 
 Hosted at [http://ticker.gerardlucas.com](http://ticker.gerardlucas.com)
 
